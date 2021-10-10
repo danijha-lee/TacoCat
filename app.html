@@ -3,7 +3,7 @@
 
 <head>
 
-    <Title>APP NAME | The App </Title>
+    <Title>TACO CAT | The App </Title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,6 +16,11 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
 
+     <!--FONT CSS-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+
     <!-- StyleSheet Site.css -->
     <link rel="stylesheet" href="/css/site.css">
 
@@ -24,10 +29,10 @@
 
 </head>
 
-<body class="d-flex-column h-100">
+<body  class="d-flex-column h-100">
 
     <!-- Nav Section -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="/index.html">
                 <img src="/img/android-chrome-192x192.png" alt="" width="30" height="30">
@@ -40,19 +45,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html">APP NAME</a>
+                        <a id="tCFont" class="nav-link" href="/index.html">taco cat</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
+                        <a id="tCFont" class="nav-link active" aria-current="page" href="/app.html">The App</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/code.html">The Code</a>
+                        <a id="tCFont" class="nav-link" href="/code.html">The Code</a>
                     </li>
+                     <li class="nav-item">
+                         <a id="tCFont" class="nav-link" target="_blank" href="https://github.com/danijha-lee/TacoCat">The Repo</a>
+                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">The Repo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank " href="https://monaeleeportfolio.netlify.app">About Me</a>
+                        <a id="tCFont" class="nav-link" target="_blank " href="https://monaeleeportfolio.netlify.app">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -60,26 +65,27 @@
 
 
     <!-- Main Section -->
-     <main id="content" class="flex-shrink-0">
+     <main id="content" class="flex-shrink-0 mt-5">
         <div class="container col-xxl-8 px-4 py-5 mt-5">
             <div class="row row-cols-1">
                 <div class="col col-md-6">
-                    <h1>REWIND: A Coding Project</h1>
-                    <p>This project reverses a string using a decremented for loop.</p>
+                    <h1 id="tCFont">TACO CAT: A Coding Project</h1>
+                    <p id="tCFont">Taco Cat is a program that will take a string of text or numbers. If it is the same
+                        backwards it makes it declares a Palindrome!</p>
                 </div>
-                <div class="col col-md-6">
-                    <h5 class="border-bottom border-danger">Enter a string to reverse</h5>
-                    <form class="row gx-3 gy-2">
+                <div class="col col-md-6 ">
+                    <h5 id="tCFont" class=" text-center mb-3 border-bottom border-dark">Enter a string to reverse</h5>
+                    <form id="tacoCatSpacebg" class="row gx-3 gy-2 bg-danger h-100">
                         <div class="col-12">
-                            <input type="text" id="userString" class="form-control" required
-                                placeholder="Enter 2 or more characters" />
+                            <input type="text" id="word" class="form-control" required
+                                 />
                         </div>
                         <div class="col-12">
-                            <button type="button" id="btnSubmit" class="btn btn-danger">Reverse!</button>
+                            <button type="button" id="btnSubmit" class="btn btn-outline-dark shadow-lg btn-warning">Reverse!</button>
                         </div>
                     </form>
                     <hr />
-                    <p id="results"></p>
+                    <!-- <p id="output"></p> -->
                 </div>
             </div>
 
@@ -99,9 +105,9 @@
                         <span class="text-muted">&copy2021</span>Monae Lee | TheMonaelee@gmail.com
                     </div>
                 </div>
-                <div class="col justify-content-center">
-                    <img src="/img/Black Background - Name - Crop.png" height="50">
-                </div>
+               <div class="col justify-content-center">
+                    <!--<img src="/img/Black Background - Name - Crop.png" height="50">-->
+                </div> 
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                     <div class="row">
                         <div class="col social"><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></div>
@@ -133,8 +139,8 @@
 
 
     <script>
-        document.getElementById("BtnSubmit").addEventListener("click", displayMessage);
-        document.getElementById("BtnSubmit2").addEventListener("click", displayMessage2);
+        document.getElementById("btnSubmit").addEventListener("click", getWord);
+      
     </script>
 
 </body>

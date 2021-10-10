@@ -12,6 +12,15 @@ main>.container {
 #content {
     min-height: 90vh;
 }
+body{
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -20,6 +29,10 @@ pre[class*="language-"] {
     word-wrap: break-word;
 }
 
+#tCFont {
+    font-family: 'Suez One', serif;
+    text-transform: uppercase;
+}
 
 nav {
     background-color: var(--dark-color);
@@ -50,6 +63,13 @@ footer .social>a:hover {
 
 .checklist>li i {
     color: #ff993b;
+}
+
+#tacoCatSpacebg{
+    background-image: url("/img/spaceTacoCatForBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 
